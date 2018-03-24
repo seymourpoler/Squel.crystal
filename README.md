@@ -11,29 +11,7 @@ development_dependencies:
 - run tests, executing in cmd ``` crystal run test/learning_test.cr ```
 # squel
 
-TODO: Write a description here
-
-## Installation
-
-Add this to your application's `shard.yml`:
-
-```yaml
-dependencies:
-  squel:
-    github: [your-github-name]/squel
-```
-
-## Usage
-
-```crystal
-require "squel"
-```
-
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
+port code from https://hiddentao.com/squel/ into Crystal language
 
 ## Contributing
 
@@ -45,4 +23,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name])  - creator, maintainer
+- [[Seymour Poler]](https://github.com/seymourpoler)  - creator, maintainer
