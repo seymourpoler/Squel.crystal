@@ -1,6 +1,6 @@
 require "minitest/autorun"
 
-require "../../src/squel/update.cr"
+require "../src/update.cr"
 
 class UpdateTest < Minitest::Test
     def test_update_fields_from_table

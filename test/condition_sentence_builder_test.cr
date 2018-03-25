@@ -1,6 +1,6 @@
 require "minitest/autorun"
 
-require "../../src/squel/condition_sentence_builder.cr"
+require "../src/condition_sentence_builder.cr"
 
 class ConditionSentenceBuilderTest < Minitest::Test
 

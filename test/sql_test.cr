@@ -1,18 +1,18 @@
 require "minitest/autorun"
 
-require "../../src/squel/sql.cr"
-require "../../src/squel/select.cr"
-require "../../src/squel/fields_builder.cr"
-require "../../src/squel/table_builder.cr"
-require "../../src/squel/limit_builder.cr"
-require "../../src/squel/offset_builder.cr"
-require "../../src/squel/order_builder.cr"
-require "../../src/squel/group_builder.cr"
-require "../../src/squel/string_joiner.cr"
+require "../src/sql.cr"
+require "../src/select.cr"
+require "../src/fields_builder.cr"
+require "../src/table_builder.cr"
+require "../src/limit_builder.cr"
+require "../src/offset_builder.cr"
+require "../src/order_builder.cr"
+require "../src/group_builder.cr"
+require "../src/string_joiner.cr"
 
-require "../../src/squel/insert.cr"
-require "../../src/squel/update.cr"
-require "../../src/squel/delete.cr"
+require "../src/insert.cr"
+require "../src/update.cr"
+require "../src/delete.cr"
 
 class SqlTest < Minitest::Test
     def test_returns_select_sentence

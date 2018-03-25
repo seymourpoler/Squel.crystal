@@ -1,6 +1,6 @@
 require "minitest/autorun"
 
-require "../../src/squel/delete.cr"
+require "../src/delete.cr"
 
 class DeleteTest < Minitest::Test
     def test_delete_from_table

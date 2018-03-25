@@ -1,6 +1,6 @@
 require "minitest/autorun"
 
-require "../../src/squel/insert.cr"
+require "../src/insert.cr"
 
 class InserTest < Minitest::Test
     def test_insert_with_assignments

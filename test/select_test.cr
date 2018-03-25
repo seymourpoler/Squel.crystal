@@ -1,13 +1,13 @@
 require "minitest/autorun"
 
-require "../../src/squel/select.cr"
-require "../../src/squel/fields_builder.cr"
-require "../../src/squel/table_builder.cr"
-require "../../src/squel/limit_builder.cr"
-require "../../src/squel/offset_builder.cr"
-require "../../src/squel/order_builder.cr"
-require "../../src/squel/group_builder.cr"
-require "../../src/squel/string_joiner.cr"
+require "../src/select.cr"
+require "../src/fields_builder.cr"
+require "../src/table_builder.cr"
+require "../src/limit_builder.cr"
+require "../src/offset_builder.cr"
+require "../src/order_builder.cr"
+require "../src/group_builder.cr"
+require "../src/string_joiner.cr"
 
 class SelectTest < Minitest::Test
     def test_select_all_from_table
