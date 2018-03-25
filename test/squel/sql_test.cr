@@ -12,6 +12,7 @@ require "../../src/squel/string_joiner.cr"
 
 require "../../src/squel/insert.cr"
 require "../../src/squel/update.cr"
+require "../../src/squel/delete.cr"
 
 class SqlTest < Minitest::Test
     def test_returns_select_sentence
@@ -36,5 +37,13 @@ class SqlTest < Minitest::Test
         result = sql.update.table("students").set("name", "'Fred'").to_string
     
         assert_equal "UPDATE students SET name = 'Fred'", result
+    end
+
+    def test_returns_delete_sentence
+        sql = SQUEL::Sql.new
+    
+        result = sql.delete.from("students").to_string
+    
+        assert_equal "DELETE FROM students", result
     end
 end
