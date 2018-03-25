@@ -21,7 +21,7 @@ class SqlTest < Minitest::Test
     assert_equal "SELECT * FROM students", result
     end
 
-    def test_returns_update_sentence
+    def test_returns_insert_sentence
         sql = SQUEL::Sql.new
     
         result = sql.insert.into("students").set("name", "Thomas").to_string
