@@ -27,5 +27,5 @@ class SqlTest < Minitest::Test
         result = sql.insert.into("students").set("name", "Thomas").to_string
     
         assert_equal "INSERT INTO students (name) VALUES (Thomas)", result
-        end
+    end
 end
