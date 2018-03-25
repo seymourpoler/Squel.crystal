@@ -10,6 +10,8 @@ require "../../src/squel/order_builder.cr"
 require "../../src/squel/group_builder.cr"
 require "../../src/squel/string_joiner.cr"
 
+require "../../src/squel/insert.cr"
+
 class SqlTest < Minitest::Test
     def test_returns_select_sentence
     sql = SQUEL::Sql.new
@@ -18,4 +20,12 @@ class SqlTest < Minitest::Test
 
     assert_equal "SELECT * FROM students", result
     end
+
+    def test_returns_update_sentence
+        sql = SQUEL::Sql.new
+    
+        result = sql.insert.into("students").set("name", "Thomas").to_string
+    
+        assert_equal "INSERT INTO students (name) VALUES (Thomas)", result
+        end
 end
