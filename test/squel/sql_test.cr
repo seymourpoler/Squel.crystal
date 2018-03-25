@@ -11,7 +11,6 @@ require "../../src/squel/group_builder.cr"
 require "../../src/squel/string_joiner.cr"
 
 class SqlTest < Minitest::Test
-
     def test_returns_select_sentence
     sql = SQUEL::Sql.new
 
